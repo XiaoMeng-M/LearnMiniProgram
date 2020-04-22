@@ -1,0 +1,16 @@
+<!--components/my-cpn/my-cpn.wxml-->
+
+<view>我是一个自定义组件</view>
+
+<!-- 必须使用类名选择器  -->
+<view class="my-cpn">我是自定义组件带类名的样式</view>
+<!-- 如果采用标签选择器 我就和用我的地方一样了 可以影响我-->
+<view>我是不带类名的</view>
+
+<!-- 第三种情况 采用组件样式隔离 在父组件的json文件中定义styleIsolation-->
+<!-- 
+  isolated：启用样式隔离
+  apply-shared：页面影响自定义组件 自定义不影响页面
+  shared： 互相影响 
+   -->
+<view>我是采用组件样式隔离的</view>

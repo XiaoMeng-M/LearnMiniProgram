@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!-- 基础使用 -->
+<my-cpn></my-cpn>
+
+<!-- 传递参数 -->
+<my-params titles="{{title}}"></my-params>

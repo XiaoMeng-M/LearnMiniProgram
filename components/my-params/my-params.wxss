@@ -1,0 +1,20 @@
+/* components/my-params/my-params.wxss */
+.tab-control {
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.item {
+  flex: 1;
+}
+.item text {
+  color: #000;
+  padding: 15rpx 10rpx;
+}
+
+.active text{
+  color: #ff5777;
+  border-bottom : 2px solid #ff5777;
+}
+

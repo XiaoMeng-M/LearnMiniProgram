@@ -1,0 +1,12 @@
+<!--components/my-params/my-params.wxml-->
+
+<!-- 父组件向自定义组件传递参数 -->
+<view class="tab-control">
+  <block wx:for="{{titles}}" wx:key="index">
+  <view class="item {{currentIndex === index ? 'active' :''}}"
+        bindtap="handleTextClick"
+        data-index="{{index}}">
+    <text>{{item}}</text>
+  </view>
+  </block>
+</view>
