@@ -1,5 +1,4 @@
 /* pages/home/home.wxss */
-
-view {
-  color: orange
+.red {
+  color: orange;
 }

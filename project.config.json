@@ -13,10 +13,11 @@
 		"autoAudits": false,
 		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkSiteMap": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
+	"libVersion": "2.10.4",
 	"appid": "wx92a7202dd0b47e8c",
 	"projectname": "LearnMiniProgram",
 	"debugOptions": {

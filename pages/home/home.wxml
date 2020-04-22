@@ -4,4 +4,20 @@
 <my-cpn></my-cpn>
 
 <!-- 传递参数 -->
-<my-params titles="{{title}}"></my-params>
+<my-params  titles="{{title}}" 
+            textColor="red" 
+            bind:itemClick="handleItemClick"></my-params>
+
+<button size="mini" bindtap="handleIncrementCpn">修改组件内的数据</button>
+<my-sel id="sel_id"/>
+
+
+<view>-------------------------</view>
+<my-slot>
+  <button size="mini" slot="slot1">123</button>
+  <button size="mini" slot="slot2">1234</button>
+  <button size="mini" slot="slot3">1235 </button>
+</my-slot>
+
+<!-- 使用externalClasses -->
+<my-style my-class="red"></my-style>

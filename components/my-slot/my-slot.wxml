@@ -1,0 +1,8 @@
+<!--components/my-slot/my-slot.wxml-->
+
+<!-- 多插槽使用 需要进行声明 multipleSlots 默认为false -->
+<view>header</view>
+  <slot name="slot1"></slot>
+  <slot name="slot2"></slot>
+  <slot name="slot3"></slot>
+<view>footer</view>

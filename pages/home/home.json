@@ -1,7 +1,10 @@
 {
   "usingComponents": {
     "my-cpn" : "/components/my-cpn/my-cpn",
-    "my-params": "/components/my-params/my-params"
+    "my-params": "/components/my-params/my-params",
+    "my-sel": "/components/my-sel/my-sel",
+    "my-slot": "/components/my-slot/my-slot",
+    "my-style": "/components/my-style/my-style"
   }
 }
 

@@ -4,10 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    textColor: {
+      type: String,
+      value: 'orange'
+    },
     titles: {
       type : Array,
       value: ['1','2','3']
     }
+    
   },
   options:{
     "styleIsolation":'isolated'
@@ -30,6 +35,8 @@ Component({
       this.setData({
         currentIndex: index
       })
+      // 通知页面的点击事件
+      this.triggerEvent("itemClick",{index,titles:this.properties.titles[index]},{})
     }
   }
 })

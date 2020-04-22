@@ -1,4 +1,8 @@
 <!--components/my-params/my-params.wxml-->
+<!-- 根据用户输入的颜色 调节文字的颜色 -->
+
+<text class="{{textColor}}">aa</text>
+
 
 <!-- 父组件向自定义组件传递参数 -->
 <view class="tab-control">
@@ -6,7 +10,7 @@
   <view class="item {{currentIndex === index ? 'active' :''}}"
         bindtap="handleTextClick"
         data-index="{{index}}">
-    <text>{{item}}</text>
+    <text class="text">{{item}}</text>
   </view>
   </block>
 </view>
