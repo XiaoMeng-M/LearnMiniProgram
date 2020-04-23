@@ -1,2 +1,12 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+
+<button size="mini" bindtap="handleClickToast">显示消息提示框</button>
+
+<button size="mini" bindtap="handleClickModal">显示模态对话框</button>
+
+<button size="mini" bindtap="handleClickLoading">显示 loading 提示框</button>
+
+<button size="mini" bindtap="handleClickActionSheet">显示操作菜单</button>
+
+<button size="mini" open-type="share">点击分享</button>

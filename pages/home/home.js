@@ -1,6 +1,5 @@
 // pages/home/home.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -61,6 +60,59 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+    return {
+      title: '我是分享的标题',
+      path: '/pages/home/home.wxml'
+    }
+  },
+  handleClickEvent (){
+    wx.showToast({
+      title: '显示消息提示框',
+    })
+  },
+  handleClickModal () {
+    wx.showModal({
+      title: '显示模态对话框',
+      content : '这是内容区域',
+      // showCancel: false,
+      success: function (res) {
+        if (res.cancel) {
+          console.log("用户点击了取消按钮");
+        }else if(res.confirm) {
+          console.log("用户点击了确定按钮");
+        }
+      }
+    })
+  },
+  handleClickLoading () {
+    wx.showLoading({
+      title: '加载中',
+      mask: true,
+    })
+    setTimeout(() => {
+      wx.hideLoading({
+        complete: (res) => {
+          console.log(res);
+        },
+      })
+    }, 2000);
+  },
+  handleClickActionSheet (){
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success: function(res) {
+        const index = res.tapIndex
+        switch (index) {
+          case 0 : console.log('点击A选项') 
+            break;
+          case 1 : console.log('点击B选项')
+            break;
+          case 2 : console.log('点击C选项')
+            break;
 
+
+        }
+      }
+    })
   }
 })
