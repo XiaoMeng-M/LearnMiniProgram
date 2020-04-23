@@ -1,4 +1,6 @@
 // pages/home/home.js
+import request from "../../service/network.js"
+
 Page({
 
   /**
@@ -12,7 +14,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.request({
+    //   url: 'http://152.136.185.210:8000/api/h8/home/multidata',
+    //   success:function(res){
+    //     console.log(res);
+    //   },
+    //   fail: function(err) {
+    //     console.log(err);
+    //   }
+    // })
+    request({
+      url:'http://152.136.185.210:8000/api/h8/home/multidata',
+    }).then(res => {
+      console.log(res);
+    }).catch(err=>{
+      console.log(err);
+    })
   },
 
   /**
