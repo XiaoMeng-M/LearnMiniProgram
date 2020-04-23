@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+<!-- 自定义返回 navigateBack -->
+<navigator open-type="navigateBack">返回</navigator>
+
+<!-- 点击按钮使用代码进行返回 -->
+<button size="mini" bindtap="handleBackHome">返回</button>

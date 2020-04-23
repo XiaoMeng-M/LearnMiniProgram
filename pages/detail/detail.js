@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -63,9 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  handleToDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail',
+  handleBackHome (){
+    wx.navigateBack({
+      delta: '2'
     })
   }
 })
